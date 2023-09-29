@@ -1,12 +1,9 @@
 name: Tutorials
 on:
-  push:
+  pull_request:
     branches:
       - main
   workflow_dispatch:
-  # cron for every two weeks
-  schedule:
-    - cron: "0 0 * * 1"
 
 jobs:
   hello-world-contract-unix:
